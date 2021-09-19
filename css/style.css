@@ -130,7 +130,8 @@ p.izquierda {
 .articulo-2 {
   display: flex;
   position: relative;
-  margin: 0 80px 50px 80px; }
+  overflow-x: hidden;
+  width: 100%; }
 
 /* DETALLES */
 /* --------SECCIÓN APLICADA CON BEM-------- */
@@ -146,18 +147,18 @@ p.izquierda {
   margin-left: -25%; }
 
 .articulo__contenedor-imagen-2 {
-  margin-left: 40%; }
+  overflow: hidden;
+  width: 100vw; }
   .articulo__contenedor-imagen-2__imagen-2 {
+    margin-left: 20%;
     margin-top: 110px; }
 
 .articulo__texto {
-  width: 800px;
   position: absolute;
   left: 8%;
   top: 40%; }
 
 .articulo-2__texto {
-  width: 800px;
   position: absolute;
   right: 8%;
   top: 40%;
@@ -188,7 +189,10 @@ p.izquierda {
 
 /* Index Caracteristicas */
 .caracteristicas {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+  .caracteristicas li {
+    list-style-type: none; }
 
 .item {
   padding: 20px;
@@ -213,6 +217,8 @@ p.izquierda {
 
 .exp {
   margin-left: 12%; }
+  .exp img {
+    width: 100%; }
 
 .exp h3 {
   text-align: center;
@@ -314,7 +320,8 @@ p.izquierda {
 
 .boton.sop {
   transition: all 500ms;
-  margin: 2px; }
+  margin: 2px;
+  margin-left: 50px; }
 
 .boton:hover {
   border-radius: 10px; }
